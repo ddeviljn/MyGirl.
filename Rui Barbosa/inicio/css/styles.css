@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+:root{
+    --color-neutral-0: #000000;
+    --color-neutral-10: #111111;
+    --color-neutral-30: #8b8784;
+    --color-neutral-40: #ffffff;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background-color: rgb(14, 13, 13);
+}
+header nav{
+    display: flex;
+    
+    flex-direction: row;
+    justify-content:space-around;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    background-color:#1b1b1b;
+    border: #000000;
+    border: 1px solid #000000;
+    border-radius: 2px;
+}
+
+li{
+    display: inline-block;
+    padding: 9px;
+    margin: 15px;
+    color: white;
+}
+
+.insta{
+    padding: 65px;
+}
+
+.logo{
+    padding: 10px;
+    
+}
+
+.container{
+    max-width: 1200px;
+    padding: 10px 20px 10px 20px;
+    margin: 0 auto;
+    border: 0px solid #000000;
+    display: grid;
+    grid-template-areas:
+    "sidenav item"
+    "sidenav item "
+    "sidenav item" ;
+}
+
+.container img{
+    width: 100%;
+
+    border-radius: 20px;
+}
+
+.sidenav{
+    max-width: 300%;
+    min-width: 250px;
+    height: 470px;
+    border-radius: 20px;
+    background-color:#1b1b1b;
+    grid-area: "sidenav";
+    grid-row: sidenav;
+    grid-gap: 20px;
+}
+
+h2{
+    display: inline-block;
+    padding: 0px;
+    color: white;
+}
+
+.item{
+    max-width: 300px;
+    min-width: 250px;
+    height: 250px;
+
+    background-color:#1b1b1b;
+    border-radius: 20px;
+    grid-area: "item";
+}
+
+footer {
+    width: 100%;
+    color: var(--color-neutral-40);
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+#footer_content{
+    background-color: var(--color-neutral-10);
+    display:block;
+    grid-template-columns: repeat(4,1fr);
+
+}
+
+#footer_contacts h1{
+    margin-bottom: 0.60rem;
+}
+
+
+#footer_turma{
+    display: flex;
+    background-color: var(--color-neutral-10);
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    flex-direction:column;
+    gap: 1.5rem;
+}
+
+#footer_turma p{
+    color: var(--color-neutral-30);
+}
+
+#footer_copyright{
+    display: flex;
+    justify-content:center;
+    background-color: var(--color-neutral-0);
+    
+    padding: 10px;
+    font-weight: 1;
+}
+
+@media (max-width: 850px){
+    .container{
+
+        grid-template-areas:
+        "sidenav item "
+        "sidenav item "
+        "sidenav item " 
+        "sidenav item "
+        "sidenav item "
+        "sidenav item " ;
+    }
+}
