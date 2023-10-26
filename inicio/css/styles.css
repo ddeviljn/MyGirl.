@@ -143,3 +143,14 @@ footer {
         "sidenav item " ;
     }
 }
+
+@media (max-width: 540px){
+    .container{
+
+        grid-template-areas:
+        "sidenav "
+        "item "
+        "item " 
+        ;
+    }
+}
