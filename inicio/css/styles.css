@@ -65,7 +65,7 @@ li{
 .sidenav{
     max-width: 300%;
     min-width: 250px;
-    height: 470px;
+    height: 400px;
     border-radius: 20px;
     background-color:#1b1b1b;
     grid-area: "sidenav";
@@ -82,7 +82,7 @@ h2{
 .item{
     max-width: 300px;
     min-width: 250px;
-    height: 250px;
+    height: 220px;
 
     background-color:#1b1b1b;
     border-radius: 20px;
